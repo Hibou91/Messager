@@ -1,0 +1,116 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  background-color: rgb(214, 187, 134);
+
+  font-family: "Oregano-Regular", serif;
+
+  background-image: url("../static/coffee-beans.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+th,
+h1,
+h2,
+h3,
+h4 {
+  font-weight: unset;
+}
+
+.btn-bg{
+  background-image: url("../static/buttons/buttons_bg.png");
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.m-button:hover .btn-bg{
+  filter:brightness(1.5);
+}
+
+.m-button:active .btn-bg{
+  filter:brightness(0.5);
+}
+
+.btn-fg{
+  background-image: url("../static/buttons/buttons_fg.png");
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  
+}
+
+
+.input{
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid rgb(36, 27, 20);
+  color:rgb(36, 27, 20);
+  background-color: rgba(255, 255, 255, 0.712);
+  font-family: "Oregano-Regular",  serif;
+}
+
+
+
+.input-group .input{
+  border-radius: 0 ;
+}
+
+.input-group :first-child{
+  border-radius: 5px 0 0 5px ;
+}
+
+.input-group :last-child{
+  border-radius: 0 5px 5px 0; 
+}
+
+.flex-row{
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-col{
+  display: flex;
+  flex-direction: column;
+}
+
+.justify-center{
+  display: flex;
+  justify-content:center;
+}
+
+.w-full{
+  width: 100%;
+}
+
+.h-full{
+  height: 100%;
+}
+
+.token-text{
+  font-family: "Oregano-Regular", serif;
+}
+
+@font-face {
+  font-family: "Oregano-Regular";
+  src: url("../static/fonts/Oregano-Regular.ttf");
+}
+
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: auto 0 auto 0;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+
+input[type="checkbox"]:checked {
+  -webkit-appearance: none;
+  appearance: none;
+  background-color:rgb(36, 27, 20);
+  /* or whatever styles you want depending on your design */
+  /* be as obvious as possible that it's a checkbox and that it's checked! */
+}
