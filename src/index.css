@@ -9,6 +9,7 @@ body {
   background-image: url("../static/coffee-beans.jpg");
   background-size: cover;
   background-attachment: fixed;
+  color:rgb(36, 27, 20);
 }
 
 th,
@@ -110,7 +111,10 @@ input[type="checkbox"] {
 input[type="checkbox"]:checked {
   -webkit-appearance: none;
   appearance: none;
-  background-color:rgb(36, 27, 20);
+  
+  background-image: url("../static/ui/checkbox.png");
+  background-size: contain;
+    
   /* or whatever styles you want depending on your design */
   /* be as obvious as possible that it's a checkbox and that it's checked! */
 }

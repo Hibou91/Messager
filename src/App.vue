@@ -10,7 +10,7 @@
         <div class="flex-col">
 
             <mButton>Messager</mButton>
-            <p>The purpose of this program is to edit string tokens for localization <span class="d-block">
+            <p>The purpose of this program is to edit Vue I18n string tokens for localization <span class="d-block">
                 while thinking about coffee.
             </span> </p>
 

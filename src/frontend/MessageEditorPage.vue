@@ -198,7 +198,6 @@ const addNewMessage = () => {
       });
     }
     state.options = state.optionsRepo
-    toast.success(t("message.successfulSave"));
   }
 
 }

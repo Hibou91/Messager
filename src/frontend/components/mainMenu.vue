@@ -1,7 +1,8 @@
 <template>
     <div>
         
-        <mButton @click="state.menuOpen = true" >Main Menu</mButton>
+        <div class="main-menu-button" @click="state.menuOpen = true">Main Menu</div>
+        
 
 
 
@@ -38,7 +39,7 @@ defineProps(['menuName'])
 
 <style scoped>
 .menu-main {
-    background-color: rgba(214, 187, 134, 1.9);
+    background-color: rgb(214, 187, 134);
     width: 150px;
     height: calc(100vh - 40px);
     max-height: 100vh;
@@ -47,6 +48,16 @@ defineProps(['menuName'])
     left: 0;
     padding: 20px;
     z-index: 100;
+}
+
+.main-menu-button{
+    cursor: pointer;
+    padding: 20px 0 0 20px;
+    font-size: 20px;
+}
+
+.main-menu-button:hover{
+    color:rgb(128, 103, 84);
 }
 
 .menu-title{
