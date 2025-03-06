@@ -4,7 +4,7 @@
         <mButton @click="importJsonFile">Import .json</mButton>
         <mButton @click="exitProgram">Exit</mButton>
     </mainMenu>
-    <MessageEditorPage v-model:messages="state.data" v-model:config="state.config" v-if="state.openEditor == true">
+    <MessageEditorPage v-model:messages="state.data" v-model:config="state.config" v-if="state.openEditor == true" :key="state.editorUpdateKey">
     </MessageEditorPage>
     <div v-else class="w-full h-full flex-row justify-center">
         <div class="flex-col">
@@ -45,7 +45,6 @@
 <script setup>
 import mainMenu from './frontend/components/mainMenu.vue';
 import mButton from './frontend/components/mButton.vue';
-import modal from './frontend/components/modal.vue';
 import MessageEditorPage from './frontend/MessageEditorPage.vue';
 
 import { ref } from 'vue'
@@ -55,7 +54,8 @@ const state = ref({
     openEditor: false,
     config: {
         sorted: false
-    }
+    },
+    editorUpdateKey: 0
 })
 
 const importJsFile = async () => {
@@ -63,6 +63,7 @@ const importJsFile = async () => {
     if (response != false) {
         state.value.data = response
         state.value.openEditor = true
+        state.value.editorUpdateKey = state.value.editorUpdateKey +1
     }
 
 }
@@ -73,6 +74,7 @@ const importJsonFile = async () => {
         state.value.data = response
         state.value.openEditor = true
     }
+    state.value.editorUpdateKey = state.value.editorUpdateKey +1
 
 }
 

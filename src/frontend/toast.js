@@ -26,11 +26,11 @@ export default {
         setTimeout(() => {
             toast.classList.remove('toast-visible')
             toast.classList.add("toast-toinvisible")
-        }, 1000)
+        }, 3000)
 
         setTimeout(() => {
             toast.classList.remove("toast-toinvisible")
             toast.classList.add("toast-invisible")
-        }, 3000)
+        }, 4000)
     }
 }
