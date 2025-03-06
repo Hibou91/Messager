@@ -1,4 +1,5 @@
 <template>
+<div style="max-width: 100vw; max-height: 100vh; overflow: auto;">
     <mainMenu>
         <mButton @click="importJsFile">Import .js</mButton>
         <mButton @click="importJsonFile">Import .json</mButton>
@@ -39,6 +40,7 @@
 
         </div>
     </div>
+</div>
 
 </template>
 

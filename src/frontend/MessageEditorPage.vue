@@ -1,8 +1,11 @@
 <template>
 
 
-  <div class="h-full flex-row justify-center">
-    <div class="flex-col">
+  <div class="h-full flex-row justify-center w-full" style="">
+    <div class="flex-col" style="overflow-x:visible;
+    min-width: 0;
+    width: fit-content;
+        padding: 0 20px 0 20px;">
       <div class="">
         <mButton @click="saveFile">Save</mButton>
 
